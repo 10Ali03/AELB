@@ -75,10 +75,13 @@ const translations = {
 };
 
 function applyTranslations(lang) {
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (translations[lang] && translations[lang][key]) {
-      el.innerText = translations[lang][key];
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    const value = translations[lang] && translations[lang][key];
+    if (value) {
+      // Remplace uniquement le texte brut
+      el.textContent = value;
     }
   });
+
 }

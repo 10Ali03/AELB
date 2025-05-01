@@ -5,3 +5,5 @@ document.addEventListener("DOMContentLoaded", () => {
     span.style.setProperty('--i', index + 1);
   });
 });
+
+
