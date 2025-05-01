@@ -1,159 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-<style>
-
-.section {
-  padding: 80px 20px;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-  padding: 80px 20px;
-  text-align: center;
-}
-.section h2 {
-  font-size: 2.2em;
-  margin-bottom: 20px;
-  color: #00bfff;
-  text-transform: uppercase;
-  border-bottom: 2px solid #00bfff;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-  html {
-    scroll-behavior: smooth;
-  }
-  .navbar {
-    position: sticky;
-    top: 0;
-    background-color: #0d1117;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 999;
-  }
-  .navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  .navbar ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  .navbar ul li a, .navbar ul li select {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    background: none;
-    border: none;
-    font-size: 16px;
-  }
-  .navbar ul li a:hover {
-    color: #007bff;
-  }
-</style>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ALI EL BOUAZZAOUI</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth; /* Active le défilement fluide */
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #0d1117;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 999;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .navbar ul li a, .navbar ul li select {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: none;
+      border: none;
+      font-size: 16px;
+    }
+
+    .navbar ul li a:hover {
+      color: #007bff;
+    }
+
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .section h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #00bfff;
+      text-transform: uppercase;
+      border-bottom: 2px solid #00bfff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <select class="lang-toggle">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+            <option value="ar">AR</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <nav class="navbar">
-    <ul style="list-style-type:none; padding:0;">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#education">Formation</a></li>
-      <li><a href="#experience">Expériences</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <select class="lang-toggle">
-          <option value="fr">FR</option>
-          <option value="en">EN</option>
-          <option value="es">ES</option>
-          <option value="ar">AR</option>
-        </select>
-      </li>
-    </ul>
-  </nav>
-</header>
   <div class="intro">
     <img src="assets/photo_ali.jpg" alt="Photo Ali EL BOUAZZAOUI" class="profile-pic" />
     <h1><span>A</span><span>L</span><span>I</span> <span>E</span><span>L</span> <span>B</span><span>O</span><span>U</span><span>A</span><span>Z</span><span>Z</span><span>A</span><span>O</span><span>U</span><span>I</span></h1>
   </div>
+
   <main>
-    <section id="about" class="section" data-i18n-section="about">
-      <h2 data-i18n="about_title">À propos</h2>
-      <p data-i18n="about_text">
+    <section id="about" class="section">
+      <h2>À propos</h2>
+      <p>
         Étudiant en 3ᵉ année à Polytech Lyon, passionné par les réseaux, la cybersécurité et les projets concrets. Je me forme activement via les projets, stages et certifications.
       </p>
     </section>
 
-    <section id="education" class="section" data-i18n-section="education">
-      <h2 data-i18n="education_title">Formation</h2>
-      <ul style="list-style-type:none; padding:0;">
-        <li data-i18n="education_1">Polytech Lyon – Diplôme d'ingénieur en informatique (2024 – 2027)</li>
-        <li data-i18n="education_2">Lyon 1 – Licence Info-Maths (2022 – 2024)</li>
-        <li data-i18n="education_3">PASS Santé – Montpellier (2021 – 2022)</li>
-        <li data-i18n="education_4">Lycée scientifique – Meknès, Maroc (2018 – 2021)</li>
+    <section id="education" class="section">
+      <h2>Formation</h2>
+      <ul>
+        <li>Polytech Lyon – Diplôme d'ingénieur en informatique (2024 – 2027)</li>
+        <li>Lyon 1 – Licence Info-Maths (2022 – 2024)</li>
+        <li>PASS Santé – Montpellier (2021 – 2022)</li>
+        <li>Lycée scientifique – Meknès, Maroc (2018 – 2021)</li>
       </ul>
     </section>
 
-    <section id="experience" class="section" data-i18n-section="experience">
-      <h2 data-i18n="experience_title">Expériences</h2>
-      <ul style="list-style-type:none; padding:0;">
-        <li data-i18n="experience_1">Chargé Business – Junior entreprise Polyenco (2025 – maintenant)</li>
-        <li data-i18n="experience_2">Employé polyvalent – Franprix (été 2024)</li>
+    <section id="experience" class="section">
+      <h2>Expériences</h2>
+      <ul>
+        <li>Chargé Business – Junior entreprise Polyenco (2025 – maintenant)</li>
+        <li>Employé polyvalent – Franprix (été 2024)</li>
       </ul>
     </section>
 
-    <section id="skills" class="section" data-i18n-section="skills">
-      <h2 data-i18n="skills_title">Compétences</h2>
-      <ul style="list-style-type:none; padding:0;">
-        <li data-i18n="skills_1">Langages : Java, C++, Python, PHP, SQL, HTML/CSS, JS, Assembleur</li>
-        <li data-i18n="skills_2">Bases de données : MySQL, MariaDB, Oracle</li>
-        <li data-i18n="skills_3">Réseaux : VLAN, Routage, Switching, Firewall</li>
-        <li data-i18n="skills_4">Outils : GitHub, Trello, IntelliJ, Visual Studio, Scrum</li>
-        <li data-i18n="skills_5">Soft Skills : rigueur, curiosité, autonomie, esprit d'équipe</li>
+    <section id="skills" class="section">
+      <h2>Compétences</h2>
+      <ul>
+        <li>Langages : Java, C++, Python, PHP, SQL, HTML/CSS, JS, Assembleur</li>
+        <li>Bases de données : MySQL, MariaDB, Oracle</li>
+        <li>Réseaux : VLAN, Routage, Switching, Firewall</li>
+        <li>Outils : GitHub, Trello, IntelliJ, Visual Studio, Scrum</li>
+        <li>Soft Skills : rigueur, curiosité, autonomie, esprit d'équipe</li>
       </ul>
     </section>
 
-    <section id="certifications" class="section" data-i18n-section="certifications">
-      <h2 data-i18n="certifications_title">Certifications</h2>
-      <ul style="list-style-type:none; padding:0;">
-        <li data-i18n="cert_1">HPE Aruba Networking Essentials</li>
-        <li data-i18n="cert_2">HPE Aruba Network Security Essentials</li>
-        <li data-i18n="cert_3">Fortinet Certified Fundamentals (prévu avril 2025)</li>
-        <li data-i18n="cert_4">PSE 1 – Premiers secours (2023)</li>
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>HPE Aruba Networking Essentials</li>
+        <li>HPE Aruba Network Security Essentials</li>
+        <li>Fortinet Certified Fundamentals (prévu avril 2025)</li>
+        <li>PSE 1 – Premiers secours (2023)</li>
       </ul>
     </section>
 
-    <section id="contact" class="section" data-i18n-section="contact">
-      <h2 data-i18n="contact_title">Contact</h2>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
       <p>Email : <a href="mailto:elbouazzaouiali21@gmail.com">elbouazzaouiali21@gmail.com</a></p>
-            <p>LinkedIn : <a href="https://linkedin.com/in/ali-el-bouazzaoui-4b96a1310" target="_blank">linkedin.com/in/ali-el-bouazzaoui</a></p>
+      <p>LinkedIn : <a href="https://linkedin.com/in/ali-el-bouazzaoui-4b96a1310" target="_blank">linkedin.com/in/ali-el-bouazzaoui</a></p>
     </section>
   </main>
 
   <script src="script.js"></script>
+  <script src="lang.js"></script>
+  <script>
+    const langSelect = document.querySelector(".lang-toggle");
+    if (langSelect) {
+      langSelect.addEventListener("change", (e) => {
+        applyTranslations(e.target.value);
+      });
+    }
+  </script>
 </body>
 </html>
-
-
-<script src="lang.js"></script>
-<script>
-  const langSelect = document.querySelector(".lang-toggle");
-  if (langSelect) {
-    langSelect.addEventListener("change", (e) => {
-      applyTranslations(e.target.value);
-    });
-  }
-</script>
