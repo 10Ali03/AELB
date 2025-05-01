@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: #0d1117;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 999;
+  }
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  .navbar ul li a, .navbar ul li select {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+  }
+  .navbar ul li a:hover {
+    color: #007bff;
+  }
+</style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ALI EL BOUAZZAOUI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#education">Formation</a></li>
+      <li><a href="#experience">Expériences</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <select class="lang-toggle">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="ar">AR</option>
+        </select>
+      </li>
+    </ul>
+  </nav>
+</header>
   <div class="intro">
     <img src="assets/photo_ali.jpg" alt="Photo Ali EL BOUAZZAOUI" class="profile-pic" />
     <h1><span>A</span><span>L</span><span>I</span> <span>E</span><span>L</span> <span>B</span><span>O</span><span>U</span><span>A</span><span>Z</span><span>Z</span><span>A</span><span>O</span><span>U</span><span>I</span></h1>
