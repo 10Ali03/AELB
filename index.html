@@ -2,19 +2,20 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ALI EL BOUAZZAOUI</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="lang.js" defer></script>
   <style>
     html {
-      scroll-behavior: smooth; /* Active le défilement fluide */
+      scroll-behavior: smooth;
     }
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
     }
-
     .navbar {
       position: sticky;
       top: 0;
@@ -23,42 +24,59 @@
       text-align: center;
       z-index: 999;
     }
-
     .navbar ul {
       list-style-type: none;
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
-
-    .navbar ul li {
+    .navbar li {
       display: inline;
       margin: 0 15px;
     }
-
-    .navbar ul li a, .navbar ul li select {
+    .navbar a, .navbar select {
       color: white;
       font-weight: bold;
       text-decoration: none;
+      font-size: 16px;
       background: none;
       border: none;
-      font-size: 16px;
+    }
+    .navbar a:hover {
+      color: #00bfff;
     }
 
-    .navbar ul li a:hover {
-      color: #007bff;
-    }
-
-    .section {
-      padding: 80px 20px;
-      text-align: center;
+    .intro {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .intro img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+    }
+    .intro h1 {
+      font-size: 2.5em;
+      letter-spacing: 5px;
+      text-transform: uppercase;
     }
 
+    .section {
+      min-height: 100vh;
+      padding: 80px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .section h2 {
-      font-size: 2.2em;
+      font-size: 2em;
       margin-bottom: 20px;
       color: #00bfff;
       text-transform: uppercase;
@@ -66,15 +84,30 @@
       display: inline-block;
       padding-bottom: 5px;
     }
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .section li {
+      margin: 10px 0;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #000;
+      color: #888;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <nav class="navbar">
       <ul>
         <li><a href="#about">À propos</a></li>
         <li><a href="#education">Formation</a></li>
-        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#experience">Expérience</a></li>
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -91,32 +124,30 @@
   </header>
 
   <div class="intro">
-    <img src="assets/photo_ali.jpg" alt="Photo Ali EL BOUAZZAOUI" class="profile-pic" />
-    <h1><span>A</span><span>L</span><span>I</span> <span>E</span><span>L</span> <span>B</span><span>O</span><span>U</span><span>A</span><span>Z</span><span>Z</span><span>A</span><span>O</span><span>U</span><span>I</span></h1>
+    <img src="assets/photo_ali.jpg" alt="Photo Ali EL BOUAZZAOUI" />
+    <h1>ALI EL BOUAZZAOUI</h1>
   </div>
 
   <main>
     <section id="about" class="section">
       <h2>À propos</h2>
-      <p>
-        Étudiant en 3ᵉ année à Polytech Lyon, passionné par les réseaux, la cybersécurité et les projets concrets. Je me forme activement via les projets, stages et certifications.
-      </p>
+      <p>Étudiant en 3ᵉ année à Polytech Lyon, passionné par les réseaux, la cybersécurité et les projets concrets.</p>
     </section>
 
     <section id="education" class="section">
       <h2>Formation</h2>
       <ul>
-        <li>Polytech Lyon – Diplôme d'ingénieur en informatique (2024 – 2027)</li>
-        <li>Lyon 1 – Licence Info-Maths (2022 – 2024)</li>
-        <li>PASS Santé – Montpellier (2021 – 2022)</li>
-        <li>Lycée scientifique – Meknès, Maroc (2018 – 2021)</li>
+        <li>Polytech Lyon – Ingénierie Informatique (2024–2027)</li>
+        <li>Lyon 1 – Licence Info-Maths (2022–2024)</li>
+        <li>PASS Santé – Université de Montpellier (2021–2022)</li>
+        <li>Lycée scientifique – Meknès (2018–2021)</li>
       </ul>
     </section>
 
     <section id="experience" class="section">
-      <h2>Expériences</h2>
+      <h2>Expérience</h2>
       <ul>
-        <li>Chargé Business – Junior entreprise Polyenco (2025 – maintenant)</li>
+        <li>Chargé Business – Polyenco (2025 – présent)</li>
         <li>Employé polyvalent – Franprix (été 2024)</li>
       </ul>
     </section>
@@ -137,7 +168,7 @@
       <ul>
         <li>HPE Aruba Networking Essentials</li>
         <li>HPE Aruba Network Security Essentials</li>
-        <li>Fortinet Certified Fundamentals (prévu avril 2025)</li>
+        <li>Fortinet FCF (prévue avril 2025)</li>
         <li>PSE 1 – Premiers secours (2023)</li>
       </ul>
     </section>
@@ -149,15 +180,14 @@
     </section>
   </main>
 
-  <script src="script.js"></script>
-  <script src="lang.js"></script>
+  <footer>
+    &copy; 2025 Ali EL BOUAZZAOUI – Tous droits réservés.
+  </footer>
+
   <script>
-    const langSelect = document.querySelector(".lang-toggle");
-    if (langSelect) {
-      langSelect.addEventListener("change", (e) => {
-        applyTranslations(e.target.value);
-      });
-    }
+    document.querySelector(".lang-toggle").addEventListener("change", function (e) {
+      applyTranslations(e.target.value);
+    });
   </script>
 </body>
 </html>
