@@ -3,30 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page d'accueil</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Ali EL BOUAZZAOUI – Ingénieur Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 10px 0 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      color: white;
+      background-color: #007bff;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .socials {
+      margin-top: 30px;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5em;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #007bff;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #aaa;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Ali EL BOUAZZAOUI</h1>
+    <p>Étudiant ingénieur en informatique à Polytech Lyon</p>
+    <a href="cv.pdf" class="btn" target="_blank">Télécharger mon CV</a>
+    <div class="socials">
+      <a href="https://github.com/ton-github" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/ton-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h1>Bienvenue sur notre site</h1>
-      <p>Ceci est une page d'accueil de base avec HTML5.</p>
-    </section>
-  </main>
-
   <footer>
-    <p>&copy; 2025 MonSite. Tous droits réservés.</p>
+    &copy; 2025 Ali EL BOUAZZAOUI – Tous droits réservés.
   </footer>
+
 </body>
 </html>
