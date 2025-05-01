@@ -3,88 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ali EL BOUAZZAOUI – Ingénieur Informatique</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Ali EL BOUAZZAOUI – Profil Ingénieur Informatique</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
+    :root {
+      --main-color: #007bff;
+      --dark: #1e1e1e;
+      --light: #f9f9f9;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      background-color: var(--light);
       color: #333;
-      text-align: center;
     }
 
-    header {
-      background-color: #1f1f1f;
-      color: white;
-      padding: 60px 20px;
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin: 10px 0 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 8px;
+    nav a {
       text-decoration: none;
+      color: #333;
       font-weight: 600;
-      color: white;
-      background-color: #007bff;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #0056b3;
-    }
-
-    .socials {
-      margin-top: 30px;
-    }
-
-    .socials a {
-      margin: 0 10px;
-      color: white;
-      font-size: 1.5em;
+      margin: 0 15px;
       transition: color 0.3s;
     }
 
-    .socials a:hover {
-      color: #007bff;
+    nav a:hover {
+      color: var(--main-color);
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-top: 40px;
+    }
+
+    h2 {
+      color: var(--main-color);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: var(--main-color);
     }
 
     footer {
-      background-color: #1f1f1f;
-      color: #aaa;
+      text-align: center;
       padding: 20px;
-      font-size: 0.9em;
+      background-color: var(--dark);
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    /* HERO */
+    .hero {
+      background-color: var(--dark);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#projects">Projets</a>
+    <a href="#skills">Compétences</a>
+    <a href="#interests">Centres d’intérêt</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
     <h1>Ali EL BOUAZZAOUI</h1>
     <p>Étudiant ingénieur en informatique à Polytech Lyon</p>
-    <a href="cv.pdf" class="btn" target="_blank">Télécharger mon CV</a>
-    <div class="socials">
-      <a href="https://github.com/ton-github" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/ton-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </header>
+    <p>Passionné par les projets concrets, l’architecture logicielle et l’innovation technologique</p>
+  </section>
+
+  <section id="about">
+    <h2>🎓 À propos</h2>
+    <p>
+      Actuellement en 3ᵉ année à <strong>Polytech Lyon</strong>, je me spécialise en informatique après une première année en médecine. 
+      Cette réorientation m’a permis de développer un profil polyvalent, alliant rigueur scientifique, créativité, et engagement dans des projets réels.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>💼 Projets & Expériences</h2>
+    <ul>
+      <li><strong>Jeu d’échecs en Java</strong> : MVC, Swing, Observer, décorateurs, roque, promotion, échec & mat</li>
+      <li><strong>Application web PHP + LDAP</strong> : Authentification via Active Directory, affichage d’objets d’OU, journalisation en base MariaDB</li>
+      <li><strong>Business Developer</strong> à la Junior Entreprise – développement commercial et prospection</li>
+      <li><strong>Trésorier</strong> d’association étudiante – gestion budgétaire, événements</li>
+      <li><strong>Employé polyvalent</strong> chez Franprix – relation client, rigueur, réactivité</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>🛠️ Compétences</h2>
+    <ul>
+      <li><strong>Langages :</strong> Java, PHP, SQL, HTML/CSS</li>
+      <li><strong>Frameworks & outils :</strong> Git, Swing, MariaDB, UML, Active Directory</li>
+      <li><strong>Soft skills :</strong> Leadership, rigueur, communication, gestion de projet</li>
+    </ul>
+  </section>
+
+  <section id="interests">
+    <h2>🎯 Centres d’intérêt</h2>
+    <p>
+      Membre actif du Bureau des Sports (Polytech), je pratique la musculation de manière régulière depuis 2 ans.
+      Passionné par les échecs, la stratégie et les nouvelles technologies, je m’implique aussi dans la vie associative.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📬 Contact</h2>
+    <p>Email : <a href="elbouazzaouiali21@gmail.com">ali.elbouazzaoui@example.com</a></p>
+    <p>LinkedIn : <a href="www.linkedin.com/in/ali-el-bouazzaoui-4b96a1310" target="_blank">linkedin.com/in/ton-profil</a></p>
+  </section>
 
   <footer>
     &copy; 2025 Ali EL BOUAZZAOUI – Tous droits réservés.
